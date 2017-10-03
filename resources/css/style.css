@@ -1,0 +1,221 @@
+html{
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica;
+}
+
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+
+.menu{
+  padding: 1rem 0rem;
+  background-color: cadetblue;
+  align-items: center;
+  position: relative;
+}
+
+.flex-container{
+  display: flex;
+}
+
+.logo{
+  flex-grow: 1;
+  align-items: center;
+}
+
+.logo{color:#fff;}
+
+.logo img{
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+.menu nav span{
+  display: inline-block;
+  color: #fff;
+  padding-right: 2rem;
+}
+
+.menu .btn {
+  display: none;
+}
+.end{
+  justify-content: flex-end;
+}
+
+.advertise{
+    background-color: white;
+    padding: 0.75rem 5rem;
+    display: inline-block;
+    margin-top: 10rem;
+    margin-right: -2rem;
+    line-height: 2.4rem;
+}
+
+.advertise h2{
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+  color:black;
+}
+
+header{
+  width: 100%;
+  height: 30rem;
+  background-image: url('../img/glasses-bg.png');
+  background-size: cover;
+  padding-top: 1rem;
+  justify-content: flex-end;
+}
+
+.services{
+  justify-content: center;
+}
+
+.service{
+  width: 5rem;
+  height: 8rem;
+  margin:3rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+
+}
+
+#paper {
+  width: 3.5rem;
+}
+
+
+.service img{ 
+  width: 5rem; 
+  margin-bottom: 1rem;
+}
+
+.infos{
+  justify-content: center;
+}
+
+.info{
+  flex-direction: column;
+  width: 35%;
+  height: auto;
+  margin-bottom: 5rem;
+}
+
+.philo{
+  margin-right: 5%;
+}
+
+.title{
+  font-weight: bold;;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.5rem 0rem 0.5rem 1.25rem;
+   margin-bottom: 1rem;
+  width: 10rem;
+  background-color: cadetblue;
+}
+
+footer{
+  padding: 4rem;
+  background-color: azure;
+  align-items: center;
+}
+
+footer img{
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1024px){
+  .container{
+    width: 100%;
+  }
+
+  header{
+    padding-top:0px;
+    height: 22rem;
+  }
+
+  .advertise{
+  margin-right: 2rem;
+  padding: 0.75rem 4rem;
+}
+
+.advertise h2{
+  font-size: 1.33rem;
+}
+}
+
+@media only screen and (max-width: 700px){
+  .menu nav span{
+  display: none;
+}
+
+.menu .btn {
+  display: block;
+}
+}
+
+@media only screen and (max-width: 560px){
+
+
+  header{
+    height: 17rem;
+  }
+
+    .advertise{
+      width: 100%;
+      margin-right: 0px;
+      padding: 1rem 0rem;
+}
+
+.advertise h2{
+  text-align: center;
+  font-size: 1rem;
+}
+
+  .services{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infos{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title{
+    width: 100%;
+    text-align: center;
+  }
+
+  .info{
+  width: 100%;
+
+  margin-bottom: 4rem;
+}
+
+.info p{
+  font-size: 0.77rem;
+  padding: 0.5rem;
+}
+
+.philo{
+  margin-right: 0px;
+}
+
+  footer{
+    justify-content: center;
+  }
+
+  footer span{
+    display: none;
+  }
+}
